@@ -1,0 +1,54 @@
+[
+    {
+        "name": "0. King's castle",
+        "desc": "Welcome adventurer. A witch-queen and an enchanted knight have caused chaos and destruction in this kingdom. I am tasking you with defeating both of them and restore peace in my kingdom. They both currenlt dwelve in an old palace south of here, just after the dungeons. Hope you succeed on this journey.",
+        "exits": { "south": 1}
+      },
+      {
+        "name": "1. Castle grounds",
+        "desc": "As you exit the castle hall, you come across a knight named Eskel. He provides you with intel on how you can defeat the witch-queen. According to Eskel, the witch can only be defeated with magic. He also asks you to visit a mage who lives south of here to get advice on how to defeat the enchanted knight.",
+        "exits": { "east": 2, "south": 3 }
+      },
+      {
+        "name": "2. Fields of the empire",
+        "desc": "You are walking through the fields of the empire. As you approach the empire's fields, the vibrant colors and textures immediately catch your eye. The fields are expansive, stretching out as far as you can see, and are alive with the sounds of nature. Birds chirp and sing, and a gentle breeze rustles through the leaves of the nearby trees.",
+        "exits": { "southeast": 3, "west": 1 },
+        "items": ["bow", "arrow", "arenaria"]
+      },
+      {
+        "name": "3. The mage's hut",
+        "desc": "You stand in front of an old hut. As you enter, you can a see woman preparing some potions. She introduces herself as Keira Metz. Upon knowing your purpose of visit, she hands you a 'magic blade oil'. She asks you to apply this oil to your sword to defeat the kinght. She also teached you a spell to take out the witch.",
+        "exits": { "north": 1, "west": 4 },
+        "items": ["magic-blade-oil"]
+      },
+      {
+        "name": "4. The dungeon",
+        "desc": "As you approach the entrance to the old dungeon, the air becomes thick and musty, and the stone walls and floors are slick with moisture. The entrance itself is a gaping maw, a dark and foreboding portal that seems to lead deep into the earth.",
+        "exits": { "south": 6, "east": 5, "north": 3},
+        "items": ["wand", "shield"]
+      },
+      {
+        "name": "5. A mysterious room",
+        "desc": "As you stand there in the dungeon, you see that there is a mysterious looking room with light emitting from it. You enter it to find treasure with lots of gold, jewels and a sword.",
+        "exits": { "west": 4, "southwest": 6 },
+        "items": ["gold", "blood-diamond", "enchanted-sword"]
+      },
+      {
+        "name": "6. The witch's lair",
+        "desc": "As you enter the abandoned palace, you encounter the witch in the palace grounds surrounded with a lot of monsters.",
+        "win": "You take out your wand, and recall the spell that Keira had taught you. You cast the spell onto the monsters and the witch. The spell is successful in killing the monster and the witch-queen. Only the enchanted knight remains.",
+        "lose": "With no wand to kill the witch, you get attacked by the monsters. Altough you fight bravely and kill all the monsters, you are no match to the witch-queen's magical spells. She strikes you with a killing spell, and you not having a wand to defend yourself, take a blow from the spell and fall to the ground. YOU LOSE.",
+        "exits": { "south": 7 },
+        "items": [],
+        "required": ["wand"]
+      },
+      {
+        "name": "7. The throne of the enchanted knight",
+        "desc": "With the witch-queen defeated, you make your way into the palace. On entering, you see the enchanted knight sitting on his throne.",
+        "win": "You take out the magic-blade-oil from your bag and apply it to the enchanted sword. This is it, the last battle of this adventure. You fight brilliantly. The knight proves to be a formidable opponent, but the enchanted blade with the magic blade oil proves too much for the boss. After a long battle, you strike him in the chest, and the he collapses to the ground. You return to the emperor to receive your reward, and you are welcomed by applause as you enter the castle.\n THE END.\nYOU WIN !!",
+        "lose": "You fight the kinght with all the power and skill you have, but you are no match to the knight's power. After a long battle, you fall to the ground, defeated. \nYOU LOSE",
+        "exits": {},
+        "items": [],
+        "required": ["enchanted-sword", "magic-blade-oil"]
+      }
+]
