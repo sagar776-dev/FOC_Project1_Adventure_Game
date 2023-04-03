@@ -14,11 +14,13 @@ A description of how you tested your code:
 
 Any bugs or issues you could not resolve:
 
-    No issues
+    Win/lose extension was a little tricky to design. but once I decided on the design and how I will implement the design, it was easy to code.
+
+    There were no issues I could not resolve
 
 An example of a difficult issue or bug and how you resolved:
 
-    No issues
+     Once I designed the win/lose extension, it was easy to code.
 
 A list of the three extensions you’ve chosen to implement, with appropriate detail on them for the CAs to evaluate them 
 (i.e., what are the new verbs/features, how do you exercise them, where are they in the map) :
@@ -73,13 +75,13 @@ A list of the three extensions you’ve chosen to implement, with appropriate de
 
         II. Enchanted Kinght: Final Boss battle in room 7
         ---> This is the final boss battle of this map. Enchanted kinght can be found in room 7 of the map.
-             To defeat the knight, you need to be in posession of magic blade oil.
+             To defeat the knight, you need to be in posession of magic blade oil and the enchanted sword.
              You can obtain 'magic-blade-oil' in room 3, in the mage's hut. Once you enter room three, the mage will prepare the blade oil for you. All you need to do is get if from her (get the item from the room using 'get magic-blade-oil')
+             You can get the enchanted sword in room 5
 
              If you win this round, the 'win' message (epilogue) will be displayed, and the game ends.
              If you lose this round, the 'lose' message is displayed and the game ends.
 
-    
 
     Steps to win the game are as follows: (for your easy evaluation)
 
@@ -95,14 +97,15 @@ A list of the three extensions you’ve chosen to implement, with appropriate de
     
     You can get the losing condition if you don't pick up the required items mentioned above.
 
-A public GitHub repo with your code in it (which you can submit directly to GradeScope)
-we should be able to run your game by running `python3 adventure.py [map name]` in a the base directory of a clone of your repo
 
-    Github URL mentioned above, and the code submitted to Gradescope
+Github URL mentioned below, and the code submitted to Gradescope
 
     URL: https://github.com/sagar776-dev/FOC_Project1_Adventure_Game
 
 
-A new map file that uses every extension (as applicable—help doesn’t affect the map)
+Cmd to execute and start the game:
 
-    Map file name: adventure_game.map
+    > python3 adventure.py adventure_game.map 
+
+
+Map file name: adventure_game.map
