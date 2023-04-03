@@ -97,16 +97,16 @@ class Player:
         self.currentRoom = self.adventureMap[self.currentRoomNo]
         print("You pick up the " + item + ".")
 
-    # def dropItemFromInventory(self, item):
-    #     if item not in self.inventory:
-    #         print('Item not in your inventory')
-    #         return
-    #     if 'items' not in self.currentRoom:
-    #         self.adventureMap[self.currentRoomNo].items = list()
-    #     itemIndex = self.inventory.index(item)
-    #     self.inventory.pop(itemIndex)
-    #     self.adventureMap[self.currentRoomNo]['items'].append(item)
-    #     print("Dropped ", item)
+    def dropItemFromInventory(self, item):
+        if item not in self.inventory:
+            print('Item not in your inventory')
+            return
+        if 'items' not in self.currentRoom:
+            self.adventureMap[self.currentRoomNo].items = list()
+        itemIndex = self.inventory.index(item)
+        self.inventory.pop(itemIndex)
+        self.adventureMap[self.currentRoomNo]['items'].append(item)
+        print("Dropped ", item)
 
     def goToDirection(self, direction):
         if 'exits' not in self.currentRoom:
@@ -216,12 +216,12 @@ def startGame(mapfile):
                 for item in argStr.split(","):
                     player.addItemToInventory(item.strip())
 
-            # elif cmd.lower().startswith('drop'):
-            #     if (len(args) == 0):
-            #         print("Itemname required for 'drop' cmd")
-            #         continue
-            #     for item in args:
-            #         player.dropItemFromInventory(item)
+            elif cmd.lower().startswith('drop'):
+                if (len(args) == 0):
+                    print("Itemname required for 'drop' cmd")
+                    continue
+                for item in args:
+                    player.dropItemFromInventory(item)
 
             elif cmd.lower().startswith('inventory'):
                 player.printPlayerInventory()
