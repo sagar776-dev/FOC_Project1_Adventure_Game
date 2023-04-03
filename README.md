@@ -1,9 +1,5 @@
 Sagar Chakravarthy Mathada Veera - 20011401
 
-Github URL: 
-No. of hours: 3-4 for coding, 4 for debugging and formatting the code to pass autograder testcases
-Manual testing for each cmd, and then overall testing with all cmds.
-
 The URL of your public GitHub repo: 
 
     URL: https://github.com/sagar776-dev/FOC_Project1_Adventure_Game
