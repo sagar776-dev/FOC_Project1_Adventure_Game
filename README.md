@@ -10,7 +10,7 @@ The URL of your public GitHub repo:
 
 An estimate of how many hours you spent on the project:
 
-    3-4 for coding, 2-3 for debugging and formatting the code to pass autograder testcases
+    3-4 hours for coding, 4 for debugging and formatting the code to pass autograder testcases
 
 A description of how you tested your code:
 
