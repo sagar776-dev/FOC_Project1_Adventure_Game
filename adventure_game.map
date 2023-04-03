@@ -13,7 +13,7 @@
         "name": "2. Fields of the empire",
         "desc": "You are walking through the fields of the empire. As you approach the empire's fields, the vibrant colors and textures immediately catch your eye. The fields are expansive, stretching out as far as you can see, and are alive with the sounds of nature. Birds chirp and sing, and a gentle breeze rustles through the leaves of the nearby trees.",
         "exits": { "southeast": 3, "west": 1 },
-        "items": ["bow", "arrow", "arenaria"]
+        "items": ["bow", "arrow", "apple"]
       },
       {
         "name": "3. The mage's hut",

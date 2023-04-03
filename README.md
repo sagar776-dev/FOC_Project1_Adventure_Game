@@ -74,6 +74,22 @@ A list of the three extensions you’ve chosen to implement, with appropriate de
              If you win this round, the 'win' message (epilogue) will be displayed, and the game ends.
              If you lose this round, the 'lose' message is displayed and the game ends.
 
+    
+
+    Steps to win the game are as follows: (for your easy evaluation)
+
+        1. go south (or south), whichever you fancy
+        2. south
+        3. get magic-blade-oil
+        4. west
+        5. get wand
+        6. east
+        7. get enchanted-sword
+        8. southwest
+        9. south
+    
+    You can get the losing condition if you don't pick up the required items mentioned above.
+
 A public GitHub repo with your code in it (which you can submit directly to GradeScope)
 we should be able to run your game by running `python3 adventure.py [map name]` in a the base directory of a clone of your repo
 
